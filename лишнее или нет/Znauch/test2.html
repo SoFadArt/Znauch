@@ -1,0 +1,82 @@
+<div id="test"></div>
+<button id="button">проверить</button>
+
+<script>
+let test = document.querySelector('#test');
+
+let questions = {
+	'1.  Правда ли, что одна и та же информация может быть закодирована разными способами и представлена в разных формах?': 'да',
+	'2.  При помощи какого кода закодирована вся информация в компьютере?': 'двоичного',
+	'3.  Как называется процесс обратный кодированию': 'декодирование',
+	'4.  С помощью чего кодируется музыкальное произведение?': 'нотных знаков',
+}
+
+for (let question in questions) {
+	let div = document.createElement('div');
+	test.appendChild(div);
+	
+	let p = document.createElement('p');
+	p.innerHTML = question;
+	div.appendChild(p);
+	
+	let input = document.createElement('input');
+	input.dataset.right = questions[question];
+	div.appendChild(input);
+}
+
+let button = document.querySelector('#button');
+button.addEventListener('click', function() {
+	let inputs = document.querySelectorAll('#test input');
+	
+	for (let input of inputs) {
+		input.classList.remove('correct');
+		input.classList.remove('incorrect');
+		
+		if (input.value == input.dataset.right) {
+			input.classList.add('correct');
+		} else {
+			input.classList.add('incorrect');
+		}
+	}
+}
+
+
+);
+
+</script>
+
+
+<style type="text/css">
+	#test div {
+	margin-bottom: 20px;
+	font-family: Montserrat;
+	padding: 20px;
+}
+
+.correct {
+	border: 2px solid green;
+	border-radius: 5px;
+}
+.incorrect {
+	border: 2px solid red;
+}
+input {
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 14px;
+}
+button {
+ padding: 10px 40px 10px 40px;
+ background: grey;
+ border-color: transparent;
+ border-radius: 35px;
+ color: white;
+ font-family: Montserrat;
+ font-size: 20px;
+ margin-left: 20px;
+}
+
+button:hover {
+	background: green;
+}
+</style>

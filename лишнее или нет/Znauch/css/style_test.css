@@ -1,0 +1,113 @@
+ *{
+            text-align: left;
+            margin-left: 0px;
+        }
+        img {
+            padding: 10px;
+        }
+		
+		input#calc {
+				margin-top: 5%;
+			    background: #47bb17;
+			    border-radius: 72px;
+			    text-align: center;
+			    color: #fff;
+			    border-color: transparent;
+        }
+        input#sbros {
+			    background: #ffa81d;
+			    border-radius: 72px;
+			    text-align: center;
+			    color: #fff;
+			    border-color: transparent;
+        }
+		
+		
+        input {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            align-items: left;
+        }
+        select {
+				margin-top: 10px;
+			    padding: 10px 40px 10px 20px;
+        }
+        label {
+        	text-align: left;
+        }
+		
+		label#but {
+			display: flex;
+			background: transparent;
+			align-items: center;
+		}
+		input#text {
+			width: 50%;
+		}
+		
+        
+        h3 {
+				  margin: 20px 0px 30px 0px;
+				  color: #520166;
+				  font-family: calibri;
+				  font-size: 24px;
+				}
+				form#test {
+					margin-top: 10%;
+				}
+				option {
+					padding: 10px;
+				}
+
+				p#t {
+			    font-size: 19px;
+			    font-family: calibri;
+			    /* text-align: -webkit-left; */
+			    /* margin-top: -10px; */
+			    padding-left: 40px;
+			    color: #6c0491;
+			    font-weight: 500;
+			    /* margin-bottom: 20%; */
+			    padding: 15px;
+			    margin: 50px 50px 50px 50px;
+			    background: #f2f2f2;
+			    border-left: solid;
+				  }
+				  p#o {
+				  	display: flex;
+				    flex-direction: column;
+				    align-items: center;
+				    margin: -50px 10px 20px 10px;
+				  }
+
+        /*---------------------------------------------*/
+
+        @media(max-width: 700px) {
+        	input#calc {
+        		width: 90%;
+        		margin-top: 50px;
+
+        	}
+        	input#sbros {
+        		width: 90%;
+        	}
+        	h3 {
+        		font-size: 18px;
+        	}
+        	p#t {
+        		margin: 20px 15px 30px 15px;
+        	}
+        	
+
+        	img#abc {
+        		width: 300px;
+        	}
+        	img#gcd {
+        		width: 250px;
+        	}
+        	.footer_link {
+        		color: white;
+        		text-decoration: none;
+        	}
+        }
+/*------------------------------------------------------------------------------------------------*/

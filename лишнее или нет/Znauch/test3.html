@@ -1,0 +1,216 @@
+<html>
+<head>
+    <title>Тест (Как вы меня знаете?)</title>
+    <meta charset="1251">
+    <style type="text/css">
+        *{
+            text-align: left;
+            margin-left: 20px;
+        }
+        img {
+            padding: 10px;
+        }
+        input {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        select {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+
+    <p> 1.  Как называется процесс обратный кодированию? <br>
+     <label>
+        <input type="text" name="quiz1" value="">
+        </label>
+    </p>
+
+    <p> 2.  При помощи какого кода закодирована вся информация в компьютере? <br>
+     <label>
+        <input type="text" name="quiz3" value="">
+        </label>
+    </p>
+
+    <p>3.  Музыкальное произведение кодируется с помощью <br>
+        <label>
+            <input type="radio" name="quiz2" value="1">
+            азбуки Брайля</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz2" value="2">
+            флажковой азбуки</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz2" value="3">
+            азбуки Морзе</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz2" value="4">
+            нотных знаков</label>
+    </p>
+
+
+     <p> 4.  Расшифруйте и запишите слово, закодированное числовым способом: <br>
+         17 33 20 10 12 13 1 19 19 15 10 12 <br>
+         <img src="img/abc.jpg" width="250px"> <br>
+     <label>
+        <input type="text" name="quiz4" value="">
+        </label>
+    </p>
+
+
+    <label for="street"> 5.  Для хранения 256-цветного изображения на кодирование одного пикселя выделяется: </label> <br>
+    <select name="quiz5" id="select">
+
+        <option value="0в"></option>
+        <option value="1в">4 байта</option>
+        <option value="2в">8 бит + </option>
+        <option value="3в">2 байта</option>
+    </select>
+
+
+    <p>6.  Выберите способы кодирования информации: <br>
+        <label>
+            <input type="checkbox" name="testGeorge" value="1">
+           экстрасенсорный</label>
+        <br>
+        <label>
+            <input type="checkbox" name="testGeorge" value="2">
+            графический</label>
+        <br>
+        <label>
+            <input type="checkbox" name="testGeorge" value="3">
+            буквенный</label>
+        <br>
+        <label>
+            <input type="checkbox" name="testGeorge" value="4">
+            символьный</label>
+        <br>
+    </p>
+
+
+    <p> 7.  Перевод графического изображения из аналоговой формы в дискретную называется… <br>
+     <label>
+        <input type="text" name="quiz7" value="">
+        </label>
+    </p>
+
+
+    <p> 8.  Укажите соответствие для 3 вариантов ответа: <br>
+    <i>( Цифры запишите в нужном порядке без пробелов )</i><br>
+        1) графический способ кодирования <br>
+        2) числовой способ кодирования <br>
+        3) символьный способ кодирования <br>
+        <img src="img/gcd.jpg" width="150px"> <br>
+     <label>
+        <input type="text" name="quiz8" value="">
+        </label>
+    </p>
+
+    <p> 9.  Вставьте в определении пропущенное слово. "Система условных знаков для представления информации называется - . . . " <br>
+     <label>
+        <input type="text" name="quiz9" value="">
+        </label>
+    </p>
+
+
+    <p>10. За наименьшую единицу измерения информации принят...<br>
+        <label>
+            <input type="radio" name="quiz10" value="1">
+            1 файл </label>
+        <br>
+        <label>
+            <input type="radio" name="quiz10" value="2в">
+            1 бит</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz10" value="3">
+            1 байт</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz10" value="4">
+            1 Кбайт</label>
+    </p>
+
+
+    <p> 11.  Растровый графический файл содержит черно-белое изображение с 16-ю градациями <br>
+        серого цвета размером 10 х 10 пикселей. Каков информационный объем этого файла? <br>
+        <i>( Ответ запишите в битах:<b> ....   бит </b> )</i> <br>
+     <label>
+        <input type="text" name="quiz11" value="">
+        </label>
+    </p>
+
+    <p> 12. Среди предложенных высказываний выберите то, которое наиболее полно и верно характеризует понятие код:<br>
+        <label>
+            <input type="radio" name="quiz12" value="1">
+           Действие с информацией для ее хранения и передачи.</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz12" value="2в">
+            Система условных знаков (символов, сигналов) для представления информации.</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz12" value="3">
+            Определенный способ передачи информации на расстояние.</label>
+        <br>
+        <label>
+            <input type="radio" name="quiz12" value="4">
+            Изменение смысла информационного сообщения для его лучшего хранения и передачи.</label>
+    </p>
+
+
+    <p>
+        <input type="button" id="calc" value="Подсчитать результаты">
+        <input type="reset" value="Сброс">
+    </p>
+    <hr>
+    <br>
+    Итого баллов: <input type="text" name="result" readonly>
+</form>
+
+<script type="text/javascript">
+    calc.onclick = function(){
+        var myform = this.form,
+            chbx = myform['testGeorge'],
+            sum = 0;
+        for(var i = 0; i < chbx.length; i++){
+            if(chbx[i].checked && (chbx[i].value == '2' || chbx[i].value == '4'))
+                sum++;
+        }
+
+        if(myform.quiz1.value == 'декодирование') sum++;
+        if(myform.quiz2.value == '4') sum++;
+        if(myform.quiz3.value == 'двоичного') sum++;
+        if(myform.quiz4.value == 'пятиклассник') sum++;
+        if(myform.quiz5.value == '2в') sum++;
+        /*if(myform.quiz6.value == 'код') sum++;*/
+        if(myform.quiz7.value == 'дискретизация') sum++;
+        if(myform.quiz8.value == '132') sum++;
+        if(myform.quiz9.value == 'код') sum++;
+        if(myform.quiz10.value == '2в') sum++;
+        if(myform.quiz11.value == '400 бит') sum++;
+        if(myform.quiz12.value == '2в') sum++;
+
+
+        myform.result.value = sum;
+
+       if(sum == 12) {
+           alert("поздравляем, вы прошли тест на 5! \nВерных ответов: "+sum+""); 
+        }
+        else {
+            alert("Сделано задач верно: " + sum + " \nПройдешь еще раз?");
+        }
+        
+    };
+
+</script>
+
+</body>
+
+</html>
